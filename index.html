@@ -94,6 +94,55 @@ background-repeat: no-repeat;
     background-repeat: no-repeat;
 }
 
+
+#langBtn {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    padding: 10px 15px;
+    border: none;
+    background-color: #007bff;
+    color: white;
+    border-radius: 8px;
+    cursor: pointer;
+    z-index: 1000;
+
+  
+}
+
+#langPopup {
+  position: fixed;
+  top: 60px;
+  right: 20px;
+  background: white;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+  padding: 10px;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+  z-index: 1000;
+}
+
+#langPopup ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+#langPopup li {
+  padding: 8px 10px;
+  cursor: pointer;
+}
+
+#langPopup li:hover {
+  background-color: #f0f0f0;
+}
+
+.hidden {
+  display: none;
+}
+
+
+
     </style>
 </head>
 <body>
@@ -117,10 +166,39 @@ background-repeat: no-repeat;
             <a href="certification.html" target="_blank" style="color: white;"><h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Certifications</h1></a>
         </div>
         <div id="contact" class="section contact-section">
-            <a href="contact_me.html" target="_blank" style="color: white;"><h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contact</h1></a>
+            <a href="contact2.html" target="_blank" style="color: white;"><h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;">Contact</h1></a>
             <br> <!--Adds space between the title and the link -->
         </div>
-    
+        <script>
+            const langBtn = document.getElementById('langBtn');
+            const langPopup = document.getElementById('langPopup');
+          
+            langBtn.addEventListener('click', () => {
+              langPopup.classList.toggle('hidden');
+            });
+          
+            function changeLanguage(lang) {
+              alert("Language switched to: " + lang);
+              // You can replace this with your actual language change logic.
+            }
+          
+            // Optional: Close popup if clicked outside
+            document.addEventListener('click', function(event) {
+              if (!langPopup.contains(event.target) && event.target !== langBtn) {
+                langPopup.classList.add('hidden');
+              }
+            });
+          </script>
+          
+        <button id="langBtn">🌐 Language</button>
 
+<div id="langPopup" class="hidden">
+  <ul>
+    <li onclick="changeLanguage('en')">English</li>
+    <li onclick="changeLanguage('es')">Español</li>
+    <li onclick="changeLanguage('fr')">Français</li>
+    <!-- Add more languages as needed -->
+  </ul>
+</div>
 </body>
 </html>
