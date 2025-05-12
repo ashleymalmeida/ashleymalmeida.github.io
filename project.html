@@ -25,6 +25,15 @@
     <h1>Snake Game</h1>
     <canvas id="gameCanvas" width="625" height="625" style="background-color: black;"></canvas>
     <script src="snake.js"></script>
+    
+    <script>
+        window.addEventListener("keydown", function (e) {
+            if ([37, 38, 39, 40].includes(e.keyCode)) {
+                e.preventDefault();
+            }
+        }, false);
+    </script>
+
 
 </body>
 </html>
