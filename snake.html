@@ -1,27 +1,33 @@
+
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Snake Game</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Responsive Snake Game</title>
   <style>
-    canvas {
-      background-color: black;
-      display: block;
-      margin: auto;
-    }
     body {
-      font-family: 'Courier New', monospace;
-      text-align: center;
-      color: white;
-      background-color: #222;
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    canvas {
+      background: #222;
+      display: block;
+      max-width: 100vw;
+      max-height: 100vh;
+      border: 2px solid #666;
+      image-rendering: pixelated; /* keeps crisp pixels */
     }
   </style>
 </head>
 <body>
-  <h1>Snake Game</h1>
-  <p>Use arrow keys to move. Press 'R' to restart after game over.</p>
-  <canvas id="gameCanvas" width="625" height="625"></canvas>
+  <canvas id="gameCanvas"></canvas>
   <script src="snake.js"></script>
-  <canvas id="gameCanvas" width="625" height="625" style="background: black;"></canvas>
-
 </body>
 </html>
+
