@@ -1,13 +1,29 @@
 <!DOCTYPE html>
-<html>
-    <head>
-       <meta charset="UTF-8">
-        <meta name="viewport", content="width=device-width, inital-scale=0.1">
-        <title>Flappy Bird</title>
-        <link rel="stylesheet" href="flappybird.css">
-        <script src="flappybird.js"></script>
-    </head>
-    <body>
-        <canvas id="board"></canvas>
-    </body>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Flappy Bird</title>
+  <link rel="stylesheet" href="flappy.css">
+  <script src="flappy.js" defer></script>
+  <style>
+    body {
+      margin: 0;
+      background: black;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      overflow: hidden;
+    }
+    canvas {
+      background: skyblue;
+      display: block;
+      border: 2px solid white;
+    }
+  </style>
+</head>
+<body>
+  <canvas id="flappyCanvas" width="360" height="480"></canvas>
+</body>
 </html>

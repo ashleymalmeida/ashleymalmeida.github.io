@@ -1,13 +1,126 @@
 <!DOCTYPE html>
-<html>
-    <head>
-       <meta charset="UTF-8">
-        <meta name="viewport", content="width=device-width, inital-scale=0.1">
-        <title>Flappy Bird</title>
-        <link rel="stylesheet" href="flappybird.css">
-        <script src="flappybird.js"></script>
-    </head>
-    <body>
-        <canvas id="board"></canvas>
-    </body>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mywebsite</title>
+    <style>
+    
+
+        body {
+            font-family: 'Times New Roman', Times, serif;
+            margin: 0;
+            padding: 0;
+            background-color: paleturquoise;
+        }
+        .navbar {
+            background-color: #333;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1000;
+        }
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            padding: 14px 20px;
+            display: inline-block;
+            font-weight: bold;
+        }
+        .navbar a:hover, .navbar a.active {
+            background-color: #575757;
+        }
+        html {
+            scroll-behavior: smooth;
+        }
+
+.section {
+    text-align: center;
+    padding: 50px;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+        .home-section {
+    text-align: center;
+    padding: 50px;
+    height: 100vh; /* Full screen height */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url('https://avatarfiles.alphacoders.com/374/thumb-1920-374742.png');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: white;
+    font-weight: bold;
+    
+}
+        .about-section {
+            text-align: center;
+            padding: 50px;
+            background-color: white;
+            color: black;
+            background-image: url('https://images.alphacoders.com/133/1337346.jpeg');
+        background-size: cover;
+    background-position: center;
+background-repeat: no-repeat;
+        }
+        .projects-section {
+    background-color: white;
+    color: black;
+    background-image: url('https://images.alphacoders.com/133/1337346.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.certifications-section {
+    background-color: white;
+    color: black;
+    background-image: url('https://images.alphacoders.com/133/1337346.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+.contact-section {
+    background-color: white;
+    color: black;
+    background-image: url('https://images.alphacoders.com/133/1337346.jpeg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+}
+
+    </style>
+</head>
+<body>
+    <div class="navbar">
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#projects">Projects</a>
+        <a href="#certifications">Certifications</a>
+        <a href="#contact">Contact</a>
+    </div>
+    <div id="home" class="section home-section">
+    <h1 style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; font-size: 40px;">Welcome to Ashley's Website</h1>
+    </div>
+    <div id="about" class="section about-section">
+        <a href="about_me.html" target="_blank" style="color: white;"><h1>About Me</h1></a>
+        </div>
+        <div id="projects" class="section projects-section">
+            <a href="project.html" target="_blank" style="color: white;"><h1>Projects</h1></a>
+        </div>
+        <div id="certifications" class="section certifications-section">
+            <a href="certification.html" target="_blank" style="color: white;"><h1>Certifications</h1></a>
+        </div>
+        <div id="contact" class="section contact-section">
+            <a href="contact2.html" target="_blank" style="color: white;"><h1>Contact</h1></a>
+            <br> <!--Adds space between the title and the link -->
+        </div>
+    
+
+</body>
 </html>

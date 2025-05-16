@@ -1,4 +1,5 @@
-
+const canvas = document.getElementById('flappyCanvas');
+const ctx = canvas.getContext('2d');
 //board
 let board;
 let boardWidth = 360;

@@ -12,43 +12,49 @@
       text-align: center;
       padding: 20px;
     }
+
     h1 {
       margin-bottom: 20px;
+      font-size: 32px;
     }
+
     .game-box {
       display: inline-block;
-      width: 320px;
+      width: 350px;
       margin: 15px;
       border: 3px solid white;
-      border-radius: 8px;
+      border-radius: 10px;
       background: #222;
       vertical-align: top;
+      overflow: hidden;
     }
+
     .title-bar {
       background: #444;
-      padding: 8px;
+      padding: 10px;
       font-weight: bold;
       font-size: 18px;
     }
+
     iframe {
-      display: block;
       width: 100%;
-      height: 300px;
+      height: 400px;
       border: none;
       background: black;
     }
+
     .play-button {
       display: block;
       width: 100%;
-      padding: 10px 0;
+      padding: 12px 0;
       background-color: #0a0;
       color: white;
       font-weight: bold;
       text-decoration: none;
-      cursor: pointer;
+      font-size: 16px;
       border-radius: 0 0 8px 8px;
-      user-select: none;
     }
+
     .play-button:hover {
       background-color: #0f0;
       color: black;
@@ -57,24 +63,23 @@
 </head>
 <body>
 
-  <h1>Choose Your Game</h1>
+  <h1>🎮 Choose Your Game</h1>
 
   <!-- Snake Game box -->
   <div class="game-box">
-    <div class="title-bar">Hop (Snake)</div>
-    <a href="snake.html" target="_blank" class="play-button" rel="noopener noreferrer">
-      Play Fullscreen
-    </a>
+    <div class="title-bar">🐍 Hop (Snake)</div>
+    <iframe src="game/snake-game/snake.html" sandbox="allow-scripts allow-same-origin"></iframe>
+    <a href="game/snake-game/snake.html" target="_blank" class="play-button">Play Fullscreen</a>
   </div>
 
   <!-- Flappy Bird Game box -->
   <div class="game-box">
-    <div class="title-bar">Slide (Flappy Bird)</div>
-    <a href="flappy.html" target="_blank" class="play-button" rel="noopener noreferrer">
-      Play Fullscreen
-    </a>
+    <div class="title-bar">🐦 Slide (Flappy Bird)</div>
+    <iframe src="newgame/flappy.html" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+    <a href="newgame/flappy.html" target="_blank" class="play-button">Play Fullscreen</a>
   </div>
 
 </body>
 </html>
+
 
